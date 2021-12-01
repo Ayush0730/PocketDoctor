@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_MyAccount"
+    android:orientation="vertical"
+    android:background="@color/lightWhite"
+    tools:context=".MyAccountFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/ProfileSection"
+        android:background="@color/white">
+
+        <TextView
+            android:textAlignment="textEnd"
+            android:id="@+id/EditProfileData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="330dp"
+            android:textAllCaps="false"
+            android:layout_marginEnd="20dp"
+            android:text="Edit"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/DarkYellow"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/setting_profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_baseline_account_circle_24" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/brandongrotesque"
+            android:includeFontPadding="false"
+            android:text="Apoorva Krishana"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="120dp"
+            android:autoSizeTextType="uniform"
+            android:includeFontPadding="false"
+            android:lines="1"
+            android:text="krishanapoorv1@gmail.com"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/mobileNo"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginLeft="120dp"
+            android:autoSizeTextType="uniform"
+            android:includeFontPadding="false"
+            android:text="+91-8294978152" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/card_1"
+                android:elevation="8dp">
+
+                <ImageView
+                    android:id="@+id/year2018"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/payment_method1"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Payment"
+                android:fontFamily="@font/poppins_medium"
+                android:textAlignment="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Method"
+                android:fontFamily="@font/poppins_medium"
+                android:textAlignment="center"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/card_2"
+                android:elevation="8dp">
+
+                <ImageView
+                    android:id="@+id/year2019"
+                    android:layout_width="65dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/purchase_order" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="My Order"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/card_3"
+                android:elevation="8dp">
+
+                <ImageView
+                    android:id="@+id/year2020"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/medicalapp"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="EHR"
+                android:fontFamily="@font/poppins_medium"
+                android:textAlignment="center"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/card_4"
+                android:elevation="8dp">
+
+                <ImageView
+                    android:id="@+id/MyRewards"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/reward"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="My Rewards"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightTeal"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:elevation="8dp">
+
+                    <ImageView
+                        android:id="@+id/MyWallet"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/digitalwallet" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/wallet"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="20sp"
+                    android:text="My Wallet"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="6dp" />
+
+                <ImageView
+                    android:id="@+id/next1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_navigate_next_24" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:elevation="8dp">
+
+                    <ImageView
+                        android:id="@+id/wish"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/wishlist" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/MyWishList"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="My Wishlist"
+                    android:paddingStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="6dp" />
+
+                <ImageView
+                    android:id="@+id/next2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_navigate_next_24" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="2dp">
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:elevation="8dp">
+
+                    <ImageView
+                        android:id="@+id/offers"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/offer" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/MyOffers"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="20sp"
+                    android:text="Offer"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:paddingStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="6dp" />
+
+                <ImageView
+                    android:id="@+id/next3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_navigate_next_24" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="2dp">
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:elevation="8dp">
+
+                    <ImageView
+                        android:id="@+id/MyReport"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/report" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/Report"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Report"
+                    android:textColor="@color/black"
+                    android:paddingStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="6dp" />
+
+                <ImageView
+                    android:id="@+id/next4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_navigate_next_24" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="2dp">
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:elevation="8dp">
+
+                    <ImageView
+                        android:id="@+id/Address"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/address" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/ManageAddress"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="20sp"
+                    android:text="Manage Address"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="6dp" />
+
+                <ImageView
+                    android:id="@+id/next5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_navigate_next_24" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="2dp">
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:elevation="8dp">
+
+                    <ImageView
+                        android:id="@+id/Help"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/help" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/help"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="20sp"
+                    android:text="Need Help?"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:paddingStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="6dp" />
+
+                <ImageView
+                    android:id="@+id/next6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_navigate_next_24" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:elevation="8dp">
+
+                    <ImageView
+                        android:id="@+id/M"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/rating" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/RateUs"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="20sp"
+                    android:text="Rate Us"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:paddingStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="6dp" />
+
+                <ImageView
+                    android:id="@+id/next"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_navigate_next_24" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="2dp">
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:elevation="8dp">
+
+                    <ImageView
+                        android:id="@+id/SignOut"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/logout" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/Logout"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="20sp"
+                    android:text="Logout"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:paddingStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="6dp" />
+
+                <ImageView
+                    android:id="@+id/next7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_navigate_next_24" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

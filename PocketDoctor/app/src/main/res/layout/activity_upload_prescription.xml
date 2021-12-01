@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UploadPrescription">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:padding="20dp">
+
+        <ImageView
+
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="30dp"
+            android:layout_toRightOf="@id/back"
+            android:fontFamily="@font/brandongrotesque"
+            android:text="Upload Prescription"
+            android:textColor="@color/DarkYellow"
+            android:textSize="30sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/back"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Have a Prescription? Upload here"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-15dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/button_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:visibility="gone"
+                    android:id="@+id/img_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/CameraButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/ic_outline_photo_camera_24"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <TextView
+                        android:id="@+id/TextCamera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/CameraButton"
+                        android:layout_marginStart="42dp"
+                        android:fontFamily="@font/brandongrotesque"
+                        android:text="Camera"
+                        android:textColor="@color/DarkYellow"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="2dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/CameraButton"
+                        android:background="@color/yellow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/GalleryButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/ic_outline_insert_photo_24"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <TextView
+                        android:id="@+id/TextGallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/GalleryButton"
+                        android:layout_marginStart="45dp"
+                        android:fontFamily="@font/brandongrotesque"
+                        android:text="Gallery"
+                        android:textColor="@color/DarkYellow"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="2dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/GalleryButton"
+                        android:background="@color/yellow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/prescriptionButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/medicalprescription" />
+
+                    <TextView
+                        android:id="@+id/submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/prescriptionButton"
+                        android:layout_marginStart="45dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/brandongrotesque"
+                        android:text="Submit"
+                        android:textColor="@color/DarkYellow"
+                        android:textSize="15sp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/shield" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="10dp"
+                    android:text="Your attached prescription will be secure and private.Only our Pharmacist will review it." />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VALID PRESCRIPTION GUIDE"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image Should be sharp and contain these 4 points." />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/presimgg"
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/formatpres" />
+
+                <ImageView
+                    android:id="@+id/Check1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/presimgg"
+                    android:padding="10dp"
+                    android:src="@drawable/checked" />
+
+                <TextView
+                    android:id="@+id/Point1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/presimgg"
+                    android:autoSizeTextType="uniform"
+                    android:padding="10dp"
+                    android:text="Doctor and Clinic Details" />
+
+                <ImageView
+                    android:id="@+id/Check2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/Check1"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/presimgg"
+                    android:padding="10dp"
+                    android:src="@drawable/checked" />
+
+                <TextView
+                    android:id="@+id/Point2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/Point1"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/presimgg"
+                    android:autoSizeTextType="uniform"
+                    android:padding="10dp"
+                    android:text="Patient and Visit Details" />
+
+                <ImageView
+                    android:id="@+id/Check3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/Check2"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/presimgg"
+                    android:padding="10dp"
+                    android:src="@drawable/checked" />
+
+                <TextView
+                    android:id="@+id/Point3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/Point2"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/presimgg"
+                    android:autoSizeTextType="uniform"
+                    android:padding="10dp"
+                    android:text="Medicine Details" />
+
+                <ImageView
+                    android:id="@+id/Check4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/Check3"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/presimgg"
+                    android:padding="10dp"
+                    android:src="@drawable/checked" />
+
+                <TextView
+                    android:id="@+id/Point4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/Point3"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/presimgg"
+                    android:autoSizeTextType="uniform"
+                    android:padding="10dp"
+                    android:text="Doctor Sign and stamp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
