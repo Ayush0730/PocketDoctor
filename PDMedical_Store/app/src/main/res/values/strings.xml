@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ffe400</color>
+    <color name="lightWhite">#D3D3D3</color>
+    <color name="DarkYellow">#ffa600</color>
+    <color name="yellow">#F6BE00</color>
+    <color name="textcolor">#0C3B2E</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="Red">#D0312D</color>
+
+    <!--  Card Colors  -->
+
+
+    <!-- important colors -->
+    <color name="colorPrimary2">#ffe400</color>
+    <color name="colorPrimaryDark">#ffa600</color>
+    <color name="colorAccent">#272727</color>
+
+</resources>

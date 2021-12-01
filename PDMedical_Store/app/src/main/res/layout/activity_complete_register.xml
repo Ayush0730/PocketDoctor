@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CompleteRegister"
+    android:background="@color/yellow"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete your Registeration here"
+        android:textSize="25dp"
+        android:background="@color/white"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/MedicalStoreName"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Medical Store Name"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+
+        >
+
+    </EditText>
+    <EditText
+        android:id="@+id/Address"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Shop Address"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+
+        >
+
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:text="Submit"
+        >
+
+    </Button>
+
+
+</LinearLayout>
