@@ -29,6 +29,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -75,12 +76,12 @@ public class UploadPrescription extends AppCompatActivity {
 
     ImageButton myimage;
 
-
     public Uri imageUri;
 
     ImageView imgView;
 
     ImageButton submit;
+    ProgressBar spinner;
 
     FirebaseStorage storage;
     FirebaseFirestore db;
@@ -94,6 +95,8 @@ public class UploadPrescription extends AppCompatActivity {
 
         myimage = findViewById(R.id.GalleryButton);
         imgView = findViewById(R.id.presimgg);
+        spinner = findViewById(R.id.progressBar);
+        spinner.setVisibility(View.GONE);
 
         storage = FirebaseStorage.getInstance();
         locationRequest = LocationRequest.create();
@@ -119,6 +122,7 @@ public class UploadPrescription extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                spinner.setVisibility(View.VISIBLE);
                 uploadImage();
 
             }
@@ -228,8 +232,9 @@ public class UploadPrescription extends AppCompatActivity {
                         Log.d("Ayush", "DocumentSnapshot added with ID: " + documentReference.getId());
                         String fcmToken = first.get("fcmToken").toString();
                         FcmNotificationsSender notificationsSender = new FcmNotificationsSender(fcmToken, "You Have a new order", "Click here to view", getApplicationContext(), UploadPrescription.this);
-
                         notificationsSender.SendNotifications();
+                        Log.d("Ayush","Notification sent to " + fcmToken);
+                        spinner.setVisibility(View.GONE);
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

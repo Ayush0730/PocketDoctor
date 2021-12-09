@@ -3,10 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Ayush/Downloads/PocketDoctor (2)/PocketDoctor/app/src/main/res/layout/activity_login.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/Ayush/Downloads/PocketDoctor (2)/PocketDoctor/app/src/main/res/drawable/circular_progress_bar.xml" value="0.14895833333333333" />
+        <entry key="..\:/Users/Ayush/Downloads/PocketDoctor (2)/PocketDoctor/app/src/main/res/layout/activity_login.xml" value="0.11503623188405797" />
         <entry key="..\:/Users/Ayush/Downloads/PocketDoctor (2)/PocketDoctor/app/src/main/res/layout/activity_login_inside.xml" value="0.12771739130434784" />
-        <entry key="..\:/Users/Ayush/Downloads/PocketDoctor (2)/PocketDoctor/app/src/main/res/layout/activity_login_page.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/Ayush/Downloads/PocketDoctor (2)/PocketDoctor/app/src/main/res/layout/activity_login_page.xml" value="0.12" />
+        <entry key="..\:/Users/Ayush/Downloads/PocketDoctor (2)/PocketDoctor/app/src/main/res/layout/activity_my_account.xml" value="0.1082427536231884" />
         <entry key="..\:/Users/Ayush/Downloads/PocketDoctor (2)/PocketDoctor/app/src/main/res/layout/activity_sign_up.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/Ayush/Downloads/PocketDoctor (2)/PocketDoctor/app/src/main/res/layout/activity_updated_my_account.xml" value="0.1082427536231884" />
+        <entry key="..\:/Users/Ayush/Downloads/PocketDoctor (2)/PocketDoctor/app/src/main/res/layout/activity_updated_my_account2.xml" value="0.1082427536231884" />
+        <entry key="..\:/Users/Ayush/Downloads/PocketDoctor (2)/PocketDoctor/app/src/main/res/layout/activity_upload_prescription.xml" value="0.2" />
+        <entry key="..\:/Users/Ayush/Downloads/PocketDoctor (2)/PocketDoctor/app/src/main/res/layout/activity_verify_otp.xml" value="0.1" />
+        <entry key="..\:/Users/Ayush/Downloads/PocketDoctor (2)/PocketDoctor/app/src/main/res/layout/fragment_diagnostic.xml" value="0.1082427536231884" />
         <entry key="..\:/Users/Ayush/Downloads/PocketDoctor (2)/PocketDoctor/app/src/main/res/layout/fragment_health_care.xml" value="0.12771739130434784" />
         <entry key="..\:/Users/Ayush/Downloads/PocketDoctor (2)/PocketDoctor/app/src/main/res/layout/fragment_my_account.xml" value="0.12771739130434784" />
       </map>
